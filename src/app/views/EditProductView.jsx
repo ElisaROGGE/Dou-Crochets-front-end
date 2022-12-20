@@ -38,7 +38,7 @@ const EditProductView = () => {
     formdata.append('image', data.image);
     formdata.append('name', data.produit);
     formdata.append('price', data.price);
-    // formdata.append('categorie', data.categorie);
+    formdata.append('categorie', data.categorie);
     formdata.append('quantity', data.quantity);
     updateProduct(formdata, products._id).then(res =>{
         setProducts(res.data)
